@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+	
+	<PropertyGroup>
+		<TargetFramework>net46</TargetFramework>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<DebugType>portable</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+		<LangVersion>latest</LangVersion>
+		<GeneratePackageOnBuild Condition="'$(Configuration)'=='Release'">true</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Xamarin.UITest">
+			<Version>2.2.3</Version>
+		</PackageReference>
+		<PackageReference Include="NUnit" Version="2.6.4" />
+    <PackageReference Include="Xamarin.UITest.Helpers">
+      <Version>0.2.10</Version>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
